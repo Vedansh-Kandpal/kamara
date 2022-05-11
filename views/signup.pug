@@ -1,0 +1,33 @@
+extends base
+
+block content
+  main.main
+    .login-form
+      h2.heading-secondary.ma-bt-lg Sign into your account
+      form.form.form--signup
+        .form__group
+          label.form__label(for='role') I am
+          input#Role.form__input(type='text', placeholder='user/seller', required)
+        .form__group
+          label.form__label(for='user') Username
+          input#username.form__input(type='text', placeholder='jhon deo', required)
+        .form__group
+          label.form__label(for='email') Email address
+          input#email.form__input(type='email', placeholder='you@example.com', required)
+        .form__group
+          label.form__label(for='phone') Phone Number
+          input#phone.form__input(type='phone', placeholder='8945612370', required)
+        .form__group
+          label.form__label(for='photo') Profile Photo
+          input#photo.form__input(type='text', placeholder='photo', required)
+        .form__group.ma-bt-md
+          label.form__label(for='password') Password
+          input#password.form__input(type='password', placeholder='••••••••', required, minlength='8')
+        .form__group.ma-bt-md
+          label.form__label(for='Conform password') Password
+          input#con_password.form__input(type='password', placeholder='••••••••', required, minlength='8')
+        .form__group
+          button.btn.btn--green Sign up
+        .form__group
+          p.form__label have a account 
+            a(href="/login") login

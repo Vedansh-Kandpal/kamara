@@ -1,0 +1,46 @@
+extends base
+
+block content
+  main.main
+    .login-form
+      h2.heading-secondary.ma-bt-lg Add new room
+      form.form.form--newRoom
+        .form__group
+          label.form__label(for='name') Room Name
+          input#name.form__input(type='text', placeholder='Balaji Bhawan', required)
+        .form__group
+          label.form__label(for='address') Address
+          input#address.form__input(type='text', placeholder='Balaji Vihar', required)
+        .form__group
+          label.form__label(for='BHK') BHK
+          input#BHK.form__input(type='number', placeholder='2', required)
+        .form__group
+          label.form__label(for='city') city
+          input#city.form__input(type='text', placeholder='Dehradun', required)
+        .form__group.ma-bt-md
+          label.form__label(for='state') State
+          input#state.form__input(type='text', placeholder='Uttarakhand', required, )
+        .form__group.ma-bt-md
+          label.form__label(for='pin') Pin Code
+          input#pin.form__input(type='number', placeholder='852369', required, minlength='6')
+        .form__group.ma-bt-md
+          label.form__label(for='price') Price
+          input#price.form__input(type='number', placeholder='5000', required, )
+        .form__group.ma-bt-md
+          label.form__label(for='imageCover') Image Cover
+          input#coverImg.form__input(type='text', placeholder='room-6.jpg', required, )
+        .form__group.ma-bt-md
+          label.form__label(for='image') Other Images
+          input#imgs.form__input(type='text', placeholder='room-6.jpg', required, )
+        .form__group.ma-bt-md
+          label.form__label(for='summary') Summary
+          textarea(rows=3)#summary.form__input(type='password', placeholder='ipsum dolor sit amet consectetur adipisicing elit. Odit iusto explicabo quasi? Iure aliquid', required)
+        .form__group.ma-bt-md
+          label.form__label(for='description') Description
+          textarea(rows=5)#description.form__input(type='password', placeholder='ipsum dolor sit amet consectetur adipisicing elit. Odit iusto explicabo quasi? Iure aliquid ratione, nihil necessitatibus deserunt amet commodi ex atque magni fuga et quis optio exercitationem rem nobis?', required,)
+        .form__group
+          button.btn.btn--green.btn-addRoom  Add
+          
+
+
+          
